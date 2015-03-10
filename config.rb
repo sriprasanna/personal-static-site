@@ -55,6 +55,8 @@ set :images_dir, 'images'
 
 activate :deploy do |deploy|
   deploy.method = :git
+  deploy.remote   = 'git@github.com:sriprasanna/sriprasanna.github.io.git' # remote name or git url, default: origin
+  deploy.branch   = 'master' # default: gh-pages
 end
 
 # Build-specific configuration
